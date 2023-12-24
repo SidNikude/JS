@@ -1,0 +1,23 @@
+JS Dialogboxes:
+
+1. Alert
+2. Confirm
+3. prompt
+
+1. Alert:
+  Only one options i.e OK normally used to accept terms and Conditions.
+  also used to show warning messages
+  Futher execution is paused untill user clicks on OK button
+  Example: alert("Show alert");
+
+2. confirm:
+  Will have two options OK and Cancel
+  If user clicks on OK it will return true
+  If user clicks on Cancel it will return false
+  Depending on OK or Cancel next flow of program will be executed
+  example: confim("Do you want to contiue?");
+
+3. Prompt:
+  Will have two options Ok and Cancel along with free input for the user
+  Based on that entered value we can write our business logic
+  example: prompt(Plz enter your age");

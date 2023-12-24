@@ -1,0 +1,20 @@
+Data Types:
+1. Primitive: stored direct to memory location
+   number, string, null, undefined, boolean
+
+2. Non - Primitive: stores information reference to memory location
+   object
+
+
+non Primitive Data Type:
+
+object
+   1.object 
+      - object a collection of key: pair values
+      - object are wrapperd into curly braces i.e { };
+      syntax: {key : value}
+
+   2.Array:
+      - array is collection of elements with different types
+      - are special type of object
+      syntax: [1,2,3,4,5,{},[]]

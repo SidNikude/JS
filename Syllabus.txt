@@ -1,0 +1,198 @@
+// JS syllybus->
+// webapplication sturcture->
+// JS introduction->single threaded,synchrnous,dynamic typed,partially OOPS,static and dynamic websites.
+// JS features->JS history,.......
+// Js limitation->
+// JS environment setup.
+// placement of JS-> head section,body section ,head and body, external .js
+// comments in JS-> single line and multi line.
+
+// variables-> local variable and global variable.
+// how many way to create variable-> direct,let,var,const.
+// rules of variables(how to create variables);
+
+// Operators-> 
+  // Arithmatic operator-> +,-,*,/,%, incre,decrement.
+  // Comparision operator-> >,<,>=,<=,==,===,!=.
+  // Assignment ->   += ,-=,*=,/=,%=
+  // logical operator->  &&, || , !
+  // Bitwise Operator-> &,|,~,^,>>,<<.
+  // conditional operator/ternary operator-> (cond)? "true" : "false",
+
+// control statement/conditional statment/decesion making statement.
+ // if , if_else, if_else_if(ladder if_else); switch statement.
+
+// Looping statment-> for(), while loop, do_while loop.
+
+// Function->  function information ->  
+// Built in function->events ->  
+// user defined function-> function definition,function calling.
+// normal function , paramterized function ,return statement.
+
+// DOM(Documnet Object Model)->
+// Storage option-> cookies,local storage,session storage.
+
+// Nvaigation-> 
+// window.location.href,window.location.assign("url"),window.location.replace("url"),
+// window.history.go(),window.history.back(),window.history.forward();
+
+// JS Dialgueboxes-> alert,confirm,prompt-> (value can store in string data type);
+
+// Datatypes-> 
+// Primitive ->
+// null,number,boolean,BigInt,string,symbol,undefined
+
+// number method->
+//  toFixed(),toPrecision(),toString(),parseInt(),parseFloat().
+// Mathmetical methods-> Math.round,Math,floor,Math.ceil,Math.sqrt,Math.trunc,Math.PI,Math.round
+
+//  string methods->
+// length, typeof, valueOf(),charAt(), charCodeAt(), indexOf() , lastIndexOf() ,replace(), replaceAll(),
+// slice(),split(),search(),concat(),substr(),substring(),toLowerCase(),toUpperCase(),trim(),includes().
+
+// NonPrimitve-> Object,array->
+// Array -> information
+// Array Methods-
+// length, push(),pop(),unshift(),shift(),slice(),splice(),join(),reverse(),toString(),indexOf(),lastIndexOf()
+// concat() , includes() , sort() 
+// Array iteration(higher Order function-> function as an argument);
+// for(), forEach(), filter(),map(),find(),every(),some(),reduce().
+
+// Object-> information {}
+// Crud operation-> Create, read/retrieve, update/modify , delete, check.('property' in object)
+// .dot notation and square bracket notation[]
+
+// how many to create object->
+// direct object, using new keyword, using Object.assign(), using Object.create({}) ,using constructor function
+
+// Object Methods->
+// Object.assign(),Object.create(),Object.entries(),Object.freeze(),Object.seal()
+// Object.keys(),Object.values(),for..in().
+
+// Array of Object Methods(real time object)-> [{}]
+// forEach(), for..of(), filter() ,map()
+
+// Asynchronous->information
+// Timer-> setTimeout(),setInterval(),clearTimeout(),clearInterval(),setImmediate()
+// callback->
+// promises-> let promise = new Promise((resolve,reject)=>{})
+// async/await-> 
+// Observables.
+
+// Scopes->
+// local scope->
+// block scope and functional scope
+// global scope-> 
+
+// lexical scope-> 
+// closures-> information....
+
+// call(),bind(),apply();
+
+// Advance of JS (ES6)->
+// features of ES6->
+// let and const
+// variable hoisting or functional hoisting
+// spread operator(...)
+// rest operator
+// Destructor
+// Default param
+// Arrow function and function creation
+// Anonmyous function and IIFE function
+// Template literal-> ``(backtick)
+// Promises
+// Modulues
+// classes.
+// Set Object();-> remove duplicates elements.
+// swap number without using third variable->
+// let a=10;
+// let b=20;
+//10 20 -->20 10
+// a=a+b;// 30
+// b=a-b;// 10
+// a=a-b;// 20
+
+// a=a^b;// 30
+// b=a^b;// 10
+// a=a^b;//
+
+// let res=[a,b]=[b,a];
+// console.log(a+" "+b);
+
+// using third varaibale->
+
+// let c=a;
+// a=b;
+// b=c;
+// console.log(a+" "+b);
+
+
+// OOPS->
+// pillars/features of OOPS-.
+// Abstraction
+// Inheritance
+// Polymorphism
+// Encapsulation.
+
+// JS oope->
+// object
+// class
+// construtor
+// inheritance
+// Abstraction
+// Polymorphism
+// Encapsulation.
+
+// let flatArr=[1,2,[3,4,[5,6],7],8];
+// // expected output->
+// let res = flatArr.flat(2);
+// console.log(res);
+
+// string convert ascii value->
+// asccii value convert into string.
+// hello wordl-> 
+/// hello wordl->
+
+
+//Es6 features
+//let ,const
+//variable hoisting
+//Normal function ---> Not part of es6
+//arrow function
+//function expression
+//IIFE
+//spread operator
+//defaulte parameter
+// Arrow function and function creation
+// Anonmyous function and IIFE function
+//rest operator
+//set method
+//spread and rest operator
+//destructor
+//curring function
+// templete literals
+
+
+
+// Promises
+// Modulues
+// classes.
+// Set Object()
+
+
+//opps
+//object
+//class
+//abstraction
+//polymorphism
+//encapsulation
+//inheritance==class and object level inheritance
+
+//reference copy
+//shallow copy
+// deep copy
+
+//iterator and generator
+//date and reguler expression
+//event bubbling and event capturing
+

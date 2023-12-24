@@ -1,0 +1,18 @@
+1) let ,const
+2)variable hoisting, functional hoisting
+3)arrow function 
+    - Normal function
+    - Arrow function
+    - Function Expression
+    - IIFE function
+    - Default Parameter
+4) Spread operator
+5) Rest operator
+6) Destructor
+7) Curring function
+8) Template literal
+9) Set Object
+10) iterator and generator
+11) date and reguler expression
+12) reference shallow deep 
+13) event bubbling and event capturing

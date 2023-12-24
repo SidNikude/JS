@@ -1,0 +1,21 @@
+JavaScript Number Methods
+These number methods can be used on all JavaScript numbers:
+
+Method	Description 
+toString()	Returns a number as a string
+toExponential()	Returns a number written in exponential notation // SKIP 
+toFixed()	Returns a number written with a number of decimals
+toPrecision()	Returns a number written with a specified length
+ValueOf()	Returns a number as a number
+
+
+-----------------------------------------------------------------------------------------
+Below methods are done in class of JS :
+
+DataType number have several built-in methods that can perform various operations and transformation on numeric values.
+
+1. tofixed()      *
+2. toPrecision()  *
+3. toString()     *
+4. parseInt()
+5. parseFloat()

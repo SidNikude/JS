@@ -1,0 +1,34 @@
+Storage options in JS:
+Storage options are used to store the information so that it can be shared at other location in our application.
+
+There are three storage options in JS:
+1. Local storage
+2. Session storage
+3. Cookies
+
+// domian :- facebook.com - single web applicaiton 
+
+1.Local Storage:
+  -local storage allows to store key-value pair  eg: { key: value }
+  -information stores as string in the browser local storage.
+  -More secure.
+  -Can store data max upto 5MB.
+  -No limit for per web application / Each web applicaiton 
+  -data stays even after we close the browser or a tab (presist the data)
+
+2.Session Storage:
+ -it is similar to local Storage
+ -Data stored in session storage is tied to a specific browsing session
+ -Data is available as long as the session is active and is cleared when the browser is closed.
+ -More secure
+ -Can store data maximum upto 5MB
+ -5MB is used for each different web application 
+
+3.Cookies: (disadvantage)
+-Less secure
+-We can store 20 cookies per website or memory upto 4kb per web applicaiton/ domain
+-Stores data in string format and plain data.
+-it has smaller capacity to store data than Local/session storage
+-Cookiesare shared with in tabs
+-one web applicaiton can have mulitple Cookies
+-unless to delete the data from device/browser, the data will remain there so eassily anyone can access it.

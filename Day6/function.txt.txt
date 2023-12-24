@@ -1,0 +1,10 @@
+function in Javascript:
+function:  is the keyword used to declare the funtion
+functionName: the name given to the function.
+parameters: can be optional
+return statement: basically it returns the function result;
+
+function functionName (paramter1, parameter2,.....){
+  //code to be executed
+  //return statements (optional)
+}

@@ -1,0 +1,138 @@
+Thread -> Task
+Single threaded --> Single task run at a time / Single line run at a time.
+Multi threaded --> Multiple task run at a time.
+
+JS basic behaviour --> Synchronous 
+    - Js is a Single threaded Synchronous language. 
+    - i.e Code is executed line by line
+    - Blocking of execution of other Code
+
+Asynchronous --> 
+    - Parallel execution 
+    - Multiple task at a time
+    - Without blocking execution of other Code (Non-blocking)
+
+    ASYNC AWAIT GPT BELOW
+
+async and await are features in JavaScript that make working with asynchronous code more readable and easier to manage. They are often used when dealing with tasks like making API requests, reading files, or performing any operation that might take some time to complete. Let's break down how they work with a simplified coding example.
+
+Understanding async Functions:
+An async function is a function that always returns a promise. This promise resolves to the value returned by the function or rejects with an error if something goes wrong within the function. You declare a function as async using the async keyword:
+
+async function fetchData() {
+  // Asynchronous code here
+  return 'Data fetched!';
+}
+
+
+Using await to Wait for Promises:
+The await keyword can only be used inside an async function. It's used to pause the execution of the function until a promise is resolved. This allows you to write asynchronous code in a more synchronous style, which is easier to understand.
+
+Here's an example of using await with a fetch request to get data from an API:
+
+async function fetchUserData() {
+  try {
+    const response = await fetch('https://api.example.com/user');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching user data:', error);
+  }
+}
+
+
+In this example:
+
+We declare an async function fetchUserData.
+We use await to pause the execution of the function until the fetch request is complete and the response is received.
+We then use await again to parse the JSON data from the response.
+If any errors occur during the fetch or JSON parsing, they are caught in the try...catch block.
+Calling async Functions:
+To use an async function, you call it like any other function and can use await to get the result:
+
+
+async function main() {
+  const userData = await fetchUserData();
+  console.log('User data:', userData);
+}
+
+main();
+
+
+async function main() {
+  const userData = await fetchUserData();
+  console.log('User data:', userData);
+}
+
+main();
+
+
+In this example, we call the fetchUserData function and wait for it to complete before logging the user data.
+
+Handling Errors:
+It's crucial to handle errors properly when working with async and await. As shown in the try...catch block in the fetchUserData function, you can catch and handle errors gracefully.
+
+To summarize, async and await in JavaScript allow you to write asynchronous code that looks more like synchronous code, making it easier to understand and maintain. async functions always return promises, and await is used to pause the execution of a function until a promise is resolved.
+
+
+Observables in JavaScript, often associated with libraries like RxJS, provide a way to work with asynchronous and event-based data streams. They are a powerful tool for handling various types of asynchronous operations such as fetching data from APIs, handling user input, and more. To understand observables better, let's break it down with a simplified coding example.
+
+Setting Up
+First, you'll need to install RxJS if you haven't already. You can do this using npm or yarn:
+
+bash
+Copy code
+npm install rxjs
+# or
+yarn add rxjs
+Now, let's dive into the concept of observables.
+
+Understanding Observables
+At its core, an observable represents a stream of data over time. It can emit multiple values asynchronously, and you can subscribe to these values and perform various operations on them.
+
+Here's a breakdown of key concepts:
+
+Observable: An observable is like a data producer. It represents a stream of data that can emit values over time.
+
+Observer: An observer is like a data consumer. It listens to the observable and reacts to the values emitted by it.
+
+Subscription: A subscription connects an observer to an observable. It allows the observer to receive values from the observable.
+
+Operators: Operators are functions that can be applied to observables to transform, filter, or combine the data emitted by the observable.
+
+Coding Example
+Let's create a simple example to illustrate observables. We'll create an observable that emits numbers every second and an observer that logs those numbers.
+
+javascript
+Copy code
+// Import the necessary RxJS functions
+import { Observable } from 'rxjs';
+import { interval } from 'rxjs';
+import { take } from 'rxjs/operators';
+
+// Create an observable that emits numbers every second
+const numbersObservable = interval(1000).pipe(take(5));
+
+// Create an observer
+const observer = {
+  next: (value) => console.log(`Next: ${value}`),
+  error: (error) => console.error(`Error: ${error}`),
+  complete: () => console.log('Complete'),
+};
+
+// Subscribe the observer to the observable
+const subscription = numbersObservable.subscribe(observer);
+
+// After 5 seconds, unsubscribe (stop) the observable
+setTimeout(() => {
+  subscription.unsubscribe();
+}, 5000);
+In this example:
+
+We import necessary RxJS functions and create an observable (numbersObservable) that emits numbers every second, but we limit it to emitting only 5 values using the take(5) operator.
+We define an observer (observer) with three callback functions: next, error, and complete. These functions will be called when the observable emits a value, encounters an error, or completes.
+We subscribe the observer to the observable using numbersObservable.subscribe(observer).
+We use setTimeout to unsubscribe from the observable after 5 seconds.
+When you run this code, you'll see the numbers emitted by the observable logged to the console, and after 5 seconds, it will complete the observable and log "Complete."
+
+This example demonstrates the basic concepts of observables: creating an observable, subscribing an observer, and unsubscribing when done. Observables offer much more power and flexibility for handling asynchronous operations, making them a valuable tool in JavaScript development.

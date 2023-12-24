@@ -1,0 +1,10 @@
+funciton already been defined by JS
+ It is also called as events
+ 
+Events:
+ onclick, onChange, onload, onfocus, onmouseover, onsubmit, onkeyup
+
+JS DOM: 
+DOM: Document object Model
+DOM is a platform where we can write JS to change or manupulate the html dynamically
+We can do DOM Manupulation

@@ -1,0 +1,16 @@
+Asynchronous
+
+Parallel execution
+non-blocking (Without blocking execution of other code)
+multi-tasking (ability to handle multiple task at a time)
+
+Asynchronous can be achieved by following methods
+1) Timer
+    setTimeout();
+    clearTimeout();
+    setInterval();
+    clearInterval();
+2) Callback
+3) Promise
+4) Async/Await
+Observables
